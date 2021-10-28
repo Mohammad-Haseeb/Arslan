@@ -45,6 +45,7 @@ function App() {
               <div>
                 <p className="searchHeading" style={{ color: "white" }}>Search : </p>
                 <Input
+                style={{ width: "300px",height: "30px"}}
                   bg="#003238"
                   ref={inputEl}
                   border="white"
