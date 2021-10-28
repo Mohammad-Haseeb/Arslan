@@ -15,7 +15,7 @@ import './card.css'
             <img src={props.img} />
             <div className="card-body">
                 {/* <h3>{props.c}</h3> */}
-                <h2>{props.data.name}</h2>
+                {/* <h2>{props.data.name}</h2> */}
                 <h2>{`${firstName} ${lastName}`}</h2>
               <h2>{title}</h2>
               <p>{company}</p>
