@@ -1,7 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { useMutation, useQuery } from "@apollo/client";
+import { getAllMessages  } from "./gqlSchema/index.js"
 function App() {
+  let { data, error, loading} = useQuery(getAllMessages)
+  console.log('data is',data,"error",error)
+
   return (
     <div className="App">
       <header className="App-header">
