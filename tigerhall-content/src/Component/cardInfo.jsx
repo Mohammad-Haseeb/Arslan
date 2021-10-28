@@ -5,7 +5,6 @@ import Card from 'react-bootstrap/Card';
 
 export const BlogPostWithImage = (props) => {
    const {firstName, lastName,title,company} = props.data.experts[0];
-     console.log("categor :  " , props.data.categories[0].name)
 
   return (
 

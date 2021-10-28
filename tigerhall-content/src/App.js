@@ -1,13 +1,10 @@
-
 import { useState, useRef } from 'react';
 import { Input, } from "@chakra-ui/react"
 import logo from './animation/load.gif'
 import './App.css';
 import { useQuery } from "@apollo/client";
 import { getAllMessages } from "./gqlSchema/index.js"
-
 import { BlogPostWithImage } from './Component/cardInfo'
-
 import { Context } from './GloabalState/index';
 
 function App() {
@@ -16,12 +13,6 @@ function App() {
   let loadingState = useState(false);
   let searchState = useState("")
   const inputEl = useRef("");
-
-
-
-  console.log("Checker", data)
-  console.log("Check")
-
   const handleChange = (event) => {
     searchState[1](inputEl.current.value)
     loadingState[1](false);
@@ -90,10 +81,7 @@ function App() {
                       </>
                     )
                   }
-
                 }
-
-
               })
             }
           </div>
