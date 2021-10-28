@@ -1,5 +1,8 @@
 import { gql } from "@apollo/client"
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 export const getAllMessages = gql`
 {
     contentCards(filter: {limit: 20, keywords: "", types: [PODCAST]}) {

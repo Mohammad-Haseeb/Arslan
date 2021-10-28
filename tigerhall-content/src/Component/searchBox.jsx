@@ -1,17 +1,28 @@
 import { Input ,Text} from "@chakra-ui/react"
-import {useState} from 'react';
+import {createContext, useState} from 'react';
+import {Context} from '../GloabalState/index';
+import { useContext,useRef } from "react";
+
 export function SearchBox() {
     const [value, setValue] = useState("")
-    const handleChange = (event) => setValue(event.target.value)
-  
+    let searchContext = useContext(Context);
+    const inputEl = useRef("");
+    
+    const handleChange = (event) => {
+      
+      searchContext[1](inputEl.current.value)
+  console.log(searchContext[0])
+       
+    }
+     
     return (
       <>
       
         <Input
           bg="#003238"
-
+          ref={inputEl}
   border="white"
-          value={value}
+          value={inputEl.current.value}
           onChange={handleChange}
           placeholder="Type Any Keyword"
           size="sm"

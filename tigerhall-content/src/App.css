@@ -1,11 +1,12 @@
 .Main-Search{ 
   display: flex; 
-  justify-content:center
+  justify-content:center;
+  padding-bottom: 10px;
 }
 .App {
  display: flex;
  flex-direction: column;
- /* width: 250px; */
+ width: 250px;
 }
 
 .mainCard-Container{
@@ -13,4 +14,9 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content:center
+} 
+div.loader{
+  display: flex;
+  justify-content:center;
+  padding-top:50%;
 }
