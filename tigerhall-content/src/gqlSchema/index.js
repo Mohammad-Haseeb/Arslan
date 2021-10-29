@@ -1,7 +1,7 @@
 import { gql } from "@apollo/client"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+console.log("i am in schema");
 
 export const getAllMessages = gql`
 {

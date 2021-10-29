@@ -14,7 +14,7 @@ export const BlogPostWithImage = (props) => {
   <div >
   <Card.Img variant="top" style={{ width: '100%'  , height: '200px' , objectFit:"fill"}} src={props.data.image.uri} />
   </div>
-  <Card.Body className="cardContentBody">
+  <Card.Body className="cardContentBody mb-3" >
     <p  className="category">{props.data.categories[0].name}</p>
     <p className="name">{props.data.name}</p>
     <p className="userName">
@@ -27,7 +27,7 @@ export const BlogPostWithImage = (props) => {
         `${title}`
       }
     </p>
-    <p className="category">
+    <p className="company">
       {
         `${company}`
       }

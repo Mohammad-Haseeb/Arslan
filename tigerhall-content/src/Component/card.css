@@ -116,3 +116,16 @@ p.title{
     height : 250px !important;
     padding-bottom: 10px;
   }
+  
+  @media screen and (max-width: 480px) {
+    .mainCOntainer{
+      padding-left: 14px;
+      width:330px;
+   }
+  }
+  p.company{
+    
+    font-weight: bold;
+  color: #ff8615;
+  margin-bottom:10px;
+}

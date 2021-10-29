@@ -36,7 +36,8 @@ function App() {
               <div>
                 <p className="searchHeading" style={{ color: "white" }}>Search : </p>
                 <Input
-                style={{ width: "300px",height: "30px"}}
+                  className="searchIcon"
+                  style={{ width: "260px",height: "30px"}}
                   bg="#003238"
                   ref={inputEl}
                   border="white"
@@ -66,7 +67,7 @@ function App() {
                 else if (obj.name.toLowerCase().includes(searchState[0].toLocaleLowerCase())) {
                   setTimeout(() => {
                     loadingState[1](true);
-                  }, 3000)
+                  }, 300)
                   if (loadingState[0]) {
                     return (
 
