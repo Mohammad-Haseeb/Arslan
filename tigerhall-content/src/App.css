@@ -18,7 +18,7 @@
 div.loader{
   display: flex;
   justify-content:center;
-  padding-top:50%;
+  padding-top:40%;
 }
 .searchIcon{
   color : white;
