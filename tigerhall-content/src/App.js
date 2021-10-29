@@ -75,14 +75,25 @@ function App() {
 
                     )
 
-                  } else {
+                  } else if(!(searchState[0] === "") && !( obj.name.toLowerCase().includes(searchState[0].toLocaleLowerCase())) ){
+                    return (
+                      <> 
+                      <p style={{color: 'red'}}>Hello</p>
+  
+                          
+                      </>
+                    )
+                  }
+                   else {
                     return (
                       <>
                         <Loader />
                       </>
                     )
                   }
+
                 }
+               
               })
             }
           </div>
