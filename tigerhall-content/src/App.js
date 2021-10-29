@@ -8,7 +8,6 @@ import { BlogPostWithImage } from "./Component/cardInfo";
 
 function App() {
   let { data, loading } = useQuery(getAllMessages);
-
   let loadingState = useState(false);
   let searchState = useState("");
   const inputEl = useRef("");
